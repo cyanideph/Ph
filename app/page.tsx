@@ -1,0 +1,1 @@
+import PhilippinesMap from "@/components/PhilippinesMap"; export default function Home(){return <PhilippinesMap/>}
