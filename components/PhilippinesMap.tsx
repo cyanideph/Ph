@@ -22,6 +22,15 @@ export default function PhilippinesMap(){
  const enter=reduced?{opacity:1}:{opacity:1,y:0};
  return <div className="site">
   <header className="header"><motion.div className="wordmark" initial={{opacity:0,x:-8}} animate={enter} transition={{duration:.45,ease}}>THE PHILIPPINES</motion.div><motion.a className="source" href="https://github.com/tordecilla/ph-drilldown-map" target="_blank" rel="noreferrer" initial={{opacity:0,x:8}} animate={enter} transition={{duration:.45,delay:.08,ease}}>MAP DATA ↗</motion.a></header>
+  <section className="visualAtlas" aria-label="Philippine imagery">
+   <div className="atlasIntro"><span>VISUAL ATLAS</span><p>Landscapes and places across the Philippine archipelago.</p></div>
+   <div className="atlasGrid">
+    <figure className="atlasCard atlasWide"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Amazing_El_Nido.jpg?width=1400" alt="Aerial view of El Nido, Palawan" loading="lazy"/><figcaption><b>Palawan</b><span>El Nido</span></figcaption></figure>
+    <figure className="atlasCard"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Taal_Volcano_aerial_2013.jpg?width=1000" alt="Aerial view of Taal Volcano and its lake" loading="lazy"/><figcaption><b>Luzon</b><span>Taal</span></figcaption></figure>
+    <figure className="atlasCard"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Travel_to_Samal_Island_Philippines.jpg?width=1000" alt="Samal Island in the Philippines" loading="lazy"/><figcaption><b>Mindanao</b><span>Samal Island</span></figcaption></figure>
+   </div>
+   <div className="atlasCredit">Photography via Wikimedia Commons · <a href="https://commons.wikimedia.org/wiki/Category:Islands_of_the_Philippines" target="_blank" rel="noreferrer">view source collection ↗</a></div>
+  </section>
   <motion.section className="hero" initial={{opacity:0,y:reduced?0:18}} animate={{opacity:1,y:0}} transition={{duration:.65,ease}}>
    <motion.div className="eyebrow" initial={{opacity:0,y:8}} animate={enter} transition={{duration:.45,delay:.08,ease}}>An interactive map</motion.div>
    <motion.h1 initial={{opacity:0,y:reduced?0:24}} animate={enter} transition={{duration:.75,delay:.12,ease}}>Explore the Philippines.</motion.h1>
